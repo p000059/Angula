@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-<meta charset="UTF-8">
-<title>Angular files</title>
-
-</head>
+<html>
 <body>
     <div>Create project Angular</div>
     <div>
