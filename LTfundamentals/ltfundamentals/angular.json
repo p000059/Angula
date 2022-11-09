@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fundamentals": {
+    "ltfundamentals": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/fundamentals",
+            "outputPath": "dist/ltfundamentals",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "fundamentals:build:production"
+              "browserTarget": "ltfundamentals:build:production"
             },
             "development": {
-              "browserTarget": "fundamentals:build:development"
+              "browserTarget": "ltfundamentals:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "fundamentals:build"
+            "browserTarget": "ltfundamentals:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "ebc0dfe8-a6bd-4b4e-8d78-e11130fa781a"
+    "analytics": "5e1196dd-dd9d-40a6-a987-d3cc71ab4bd7"
   }
 }
