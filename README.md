@@ -10,6 +10,7 @@
         <p>Build TypeScript File -> command: tsc file.ts</p>
         <p>Create module -> command: ng generate module myModule</p>
         <p>Create Component -> command: ng generate component myModule/myComponent</p>
+        <p>Create Pipe -> command: ng generate pipe myPipe</p>
     </div>
 <body>
 </html>

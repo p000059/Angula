@@ -8,4 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class SecondComponentComponent {
 
     name = "Lucas Lima";
+    email = "lucas.lima@gmail.com";
+    birth = "1995-01-01";
 }

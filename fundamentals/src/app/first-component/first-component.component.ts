@@ -7,6 +7,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponentComponent {
 
-  constructor() { }
-
+    text = "Text Interpolation";
 }
