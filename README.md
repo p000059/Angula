@@ -11,6 +11,7 @@
         <p>Create module -> command: ng generate module myModule</p>
         <p>Create Component -> command: ng generate component myModule/myComponent</p>
         <p>Create Pipe -> command: ng generate pipe myPipe</p>
+        <p>Create Service -> command: ng generate service myService</p>
     </div>
 <body>
 </html>
