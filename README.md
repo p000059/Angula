@@ -12,6 +12,12 @@
         <p>Create Component -> command: ng generate component myModule/myComponent</p>
         <p>Create Pipe -> command: ng generate pipe myPipe</p>
         <p>Create Service -> command: ng generate service myService</p>
+        <p>Install Router Library(in the project directory) -> command: npm i @angular/router</p>
+        <p>Create AppRoutingModule -> command: ng generate module app-routing --flat --module=app</p>
+        <p>Load Router -> command: ng serve --open&</p>
+        <p>Create Module -> command: ng generate module lazy-loading --route lazy-loading --route=lazy-loading --module=app.module</p>
+        <p>Create RootGuard -> command: ng generate guard auth</p>
+        <p>Create Service Authentication -> command: ng generate service auth</p>
     </div>
 <body>
 </html>

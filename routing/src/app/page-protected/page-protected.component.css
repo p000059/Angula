@@ -1,0 +1,15 @@
+.buttonForm {
+
+    border-color: rgb(5, 202, 169);
+    border-radius: 5px;
+    background-color: rgb(5, 202, 169);
+    letter-spacing: 2px;
+    text-align: center;
+    text-justify: inherit;
+    text-transform: capitalize;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-spacing: 4px;
+    color: #ecedee;
+}

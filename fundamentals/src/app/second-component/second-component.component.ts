@@ -10,4 +10,9 @@ export class SecondComponentComponent {
     name = "Lucas Lima";
     email = "lucas.lima@gmail.com";
     birth = "1995-01-01";
+    urlImagem = "/assets/casa1.png";
+
+    showBirth(){
+      alert(`Date Birth:  ${this.birth}`)
+    }
 }

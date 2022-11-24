@@ -1,0 +1,12 @@
+<app-card title="Home Page">
+    <router-outlet></router-outlet>
+</app-card>
+<app-card title="List Page">
+    <div>
+        <button class="buttonForm" type="button" (click)="moveFirstPage()">First Page</button>
+        <button class="buttonForm" type="button" (click)="moveSecondPage()">Second Page</button>
+        <button class="buttonForm" type="button" (click)="moveThirdPage()">Third Page</button>
+        <button class="buttonForm" type="button" (click)="movePageWithParamenter()">Parameter</button> 
+        <button class="buttonForm" type="button" (click)="movePageLogin()">Page Login</button>       
+    </div>
+</app-card>

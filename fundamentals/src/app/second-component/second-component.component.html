@@ -7,3 +7,9 @@
 <div>
     <p>Nascimento: {{ birth | date : "dd/MMMM/yyyy" }}</p>
 </div>
+<div>
+    <img [src] = "urlImagem" width="150" height="150">
+</div>
+<div>
+    <button class="buttonForm" (click)="showBirth()" type="button">Mostrar dt. Nascimento</button>
+</div>

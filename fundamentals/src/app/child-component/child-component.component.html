@@ -1,0 +1,10 @@
+<h3>The last name came from the parent element.</h3>
+<div>
+    <label for="name" > Enter a name: </label>
+</div>
+<div>
+    <input type="text" id="idName" [(ngModel)] = "name" >
+</div>
+<div>
+    <button type="button" (click)="showFullName.emit(name + ' ' + lastName)" >Show Full Name</button>
+</div>

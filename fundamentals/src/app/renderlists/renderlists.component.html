@@ -1,0 +1,8 @@
+<h2>Render Lists</h2>
+<ul>
+    <li *ngFor="let telephone of phones">
+        <strong>{{telephone.name}}</strong>
+        <p>{{telephone.description}}</p>
+        <p [ngClass]="telephone.finished ? 'finished' : '' " >{{telephone.finished ? "finished" : "avaiable"}}</p>
+    </li>
+</ul>

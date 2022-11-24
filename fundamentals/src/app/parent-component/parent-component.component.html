@@ -1,0 +1,4 @@
+<h1>Interaction Between Components</h1>
+<p>The predefined last name is: {{ lastName }}</p>
+<p>Full Name: {{ child.name }} {{lastName}} </p>
+<app-child-component [lastName]="lastName" (showFullName) = "showFullName($event)" #child></app-child-component>
