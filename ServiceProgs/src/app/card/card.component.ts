@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-
-  @Input() title = "";
-  @Input() color = "#ccc"; 
-
+  
+  @Input() title = '';
+  @Input() color = '#ccc';
+  
 }

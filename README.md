@@ -4,11 +4,13 @@
     <div></div>
     <div>
         <p>Create project Angular -> command: ng new nome-programa</p>
+        <p>Create module -> command: ng generate module myModule</p>
         <p>Install TypeScript -> command: npm install -g typescript</p>
         <p>Install Angula/CLI -> command: npm install -g @angular/fs</p>
-        <p>Build project -> command: ng serve</p>
+        <p>UP project -> command: ng serve &</p>
+        <p>List port -> command: netstat -a -n -o</p>
+        <p>kill process -> command: tskill "PID number"</P>
         <p>Build TypeScript File -> command: tsc file.ts</p>
-        <p>Create module -> command: ng generate module myModule</p>
         <p>Create Component -> command: ng generate component myModule/myComponent</p>
         <p>Create Pipe -> command: ng generate pipe myPipe</p>
         <p>Create Service -> command: ng generate service myService</p>
