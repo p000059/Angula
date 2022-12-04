@@ -11,8 +11,10 @@ export class ListComponent {
   name_course: string = "";
   list_course: string[] = [];
 
-  constructor(listService: ListserviceService) { }
+  constructor(private listService: ListserviceService) {
 
-  service = new ListserviceService();
+    this.name_course = 'JavaScript';
 
+    this.list_course = this.listService.getCourse();
+  }
 }
