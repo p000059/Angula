@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { EventbidingComponent } from './eventbiding/eventbiding.component';
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
+import { OutputpropertyComponent } from './outputproperty/outputproperty.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     EventbidingComponent,
-    TwowaydatabindingComponent
+    TwowaydatabindingComponent,
+    OutputpropertyComponent
   ],
   imports: [
     BrowserModule,

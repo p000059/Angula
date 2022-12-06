@@ -12,7 +12,8 @@ export class TwowaydatabindingComponent {
     person: any = {
 
       name: 'Marcelo',
-      age: 20
+      age: 20,
+      status: true
     }
 
 }
