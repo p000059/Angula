@@ -1,0 +1,14 @@
+
+<table>
+    <tr *ngFor="let c of aCourse">
+        <td>{{ c.name }}</td>
+        <td>{{ c.value }}</td>
+        <td><button class="buttons btn-warning" type="button" (click)="findCourse(c)"></button></td>
+        <td></td>
+    </tr>
+</table>
+
+<button class="buttons btn-success" type="button" (click)="create()">create</button>
+<button class="buttons btn-warning" type="button" (click)="readAll()">read</button>
+<button class="buttons btn-info" type="button" (click)="update()">update</button>
+<button class="buttons btn-danger" type="button" (click)="delete()">delete</button>
