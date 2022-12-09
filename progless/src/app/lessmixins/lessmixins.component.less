@@ -1,0 +1,33 @@
+@color: rgb(175, 173, 173);
+@color1: rgb(111, 171, 240);
+@color2: rgb(245, 98, 98);
+
+.drop-shadow(){
+    text-shadow: 2px 1px 1px @color;
+    text-decoration: none;
+}
+
+h1 {
+    .cores(50px, 'h1')
+}
+
+h2{
+    .cores(50px, 'h2')
+}
+
+.cores(@size, @tag){
+
+    color: @color1;
+    font-size: @size;
+
+    & when (@tag = 'h1'){
+        text-shadow: 2px 1px 1px @color;
+        background-color: @color1;
+        color: @color2;
+    } 
+    & when (@tag = 'h2') {
+        text-shadow: 2px 1px 1px @color;
+        background-color: @color2;
+        color: @color1;
+    }
+}
