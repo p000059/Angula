@@ -1,5 +1,6 @@
 .container {
 
+    background-color: #ccc;
     padding: 2px;
     margin: 20px 0;
     width: 80%;
@@ -11,6 +12,7 @@
 
 .content{
 
+    color: black;
     background-color: white;
     padding: 5px;
 }

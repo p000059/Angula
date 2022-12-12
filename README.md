@@ -93,6 +93,22 @@
                 <td>npm install sass</td>
             </tr>
             <tr>
+                <td>Change project to Less</td>
+                <td>ng set defaults.styleExt less</td>
+            </tr>
+            <tr>
+                <td>Change project to sass</td>
+                <td>ng set defaults.styleExt sass</td>
+            </tr>
+            <tr>
+                <td>Change project to stylus</td>
+                <td>ng set defaults.styleExt styl</td>
+            </tr>
+            <tr>
+                <td>Style Guides</td>
+                <td>ng lint</td>
+            </tr>
+            <tr>
                 <td>Load Project</td>
                 <td>ng serve --open&</td>
             </tr>
@@ -107,6 +123,18 @@
             <tr>
                 <td>Build TypeScript File</td>
                 <td>tsc file.ts</td>
+            </tr>
+            <tr>
+                <td>Production's Build</td>
+                <td>ng build --prod</td>
+            </tr>
+            <tr>
+                <td>Install http-server npm</td>
+                <td>npm install http-server -g</td>
+            </tr>
+            <tr>
+                <td>Install Bootstrap</td>
+                <td>npm install --save bootstrap</td>
             </tr>
         </table>
     </div>

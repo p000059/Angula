@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { ListComponent } from './list/list.component';
 import { ListserviceService } from './list/listservice.service';
+import { CourseComponent } from './course/course.component';
+import { ButtonsComponent } from './buttons/buttons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    ListComponent
+    ListComponent,
+    CourseComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule
