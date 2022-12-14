@@ -1,25 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
-import { ListComponent } from './list/list.component';
-import { ListserviceService } from './list/listservice.service';
-
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    ListComponent
+    FormsComponent
   ],
   imports: [
-    BrowserModule
-    
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [
-    ListserviceService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,13 @@
+$background: white
+$color: black
+
+@mixin block-background($background)
+    div
+        color: $background
+
+article
+    @include block-background($background)
+    @if($background == #ccc)
+        $background: $color
+    @else
+        $background: $color
