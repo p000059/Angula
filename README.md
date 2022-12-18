@@ -125,7 +125,7 @@
                 <td>tsc file.ts</td>
             </tr>
             <tr>
-                <td>Production's Build</td>
+                <td>Build Project</td>
                 <td>ng build --prod</td>
             </tr>
             <tr>
