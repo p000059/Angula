@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="../public/manifest.json">
+    <link rel="icon" type="imagem/png" href="../public/img/icon-512x512.png">
+    <link rel="apple-touch-icon" type="imagem/png" href="../public/img/icon-512x512.png">
+    <link rel="shortcut icon" type="imagem/png" href="../public/img/icon-512x512.png">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA</title>
+</head>
+<body>
+    <header>PWA</header>
+
+    <main>
+        <div>
+            <a class="buttons" href="/">Page One</a>
+            <a class="buttons" href="#">Page Two</a>
+            <a class="buttons" href="#">Page Three</a>
+            <a class="buttons" href="#">Page Four</a>
+        </div>
+    </main>
+    
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('generated-sw.js');
+        }
+    </script>
+    <footer>
+        <small>&copy;Guimba - 2022</small>
+    </footer>
+</body>
+</html>
