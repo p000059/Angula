@@ -1,5 +1,4 @@
 .container {
-
     padding: 2px;
     margin: 20px 0;
     width: 80%;
@@ -10,7 +9,6 @@
 }
 
 .content{
-
     background-color: white;
     padding: 5px;
 }

@@ -5,20 +5,24 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { ListComponent } from './list/list.component';
 import { ListserviceService } from './list/listservice.service';
+import { ListOneComponent } from './list-one/list-one.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    ListComponent
+    ListComponent,
+    ListOneComponent,
+    
   ],
   imports: [
     BrowserModule
     
   ],
   providers: [
-    ListserviceService
+    ListserviceService,
+    
   ],
   bootstrap: [AppComponent]
 })

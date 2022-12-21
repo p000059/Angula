@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 import { ListserviceService } from './listservice.service';
 
 @Component({
@@ -8,13 +8,17 @@ import { ListserviceService } from './listservice.service';
 })
 export class ListComponent {
 
-  name_course: string = "";
+  createdCourse = new EventEmitter<string>();
   list_course: string[] = [];
 
   constructor(private listService: ListserviceService) {
 
-    this.name_course = 'JavaScript';
-
     this.list_course = this.listService.getCourse();
+  }
+
+  onAddCourse(course: string){
+
+    this.listService.addCourse(course)
+    this.createdCourse.emit(course)
   }
 }

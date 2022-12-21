@@ -1,0 +1,32 @@
+<section>
+    <header>register person</header>
+    <article>
+        <form [formGroup]="forms" (ngSubmit)="onSubmit()">
+            <div class="row" [ngClass]="implementCSSerror('name')">
+                <div class="col-25">
+                    <label for="name" id="name" class="labels">name</label>
+                </div>
+                <div class="col-75">
+                    <input placeholder="enter the name" type="text" class="inputs" formControlName="name">
+                </div>
+                <div class="col-25">
+                    <label for="age" id="age" class="labels">age</label>
+                </div>
+                <div class="col-75">
+                    <input placeholder="enter the age" type="number" class="inputs" formControlName="age">
+                </div>
+                <div class="col-25">
+                    <label for="email" id="email" class="labels">email</label>
+                </div>
+                <div class="col-75">
+                    <input placeholder="name@email.com" type="email" class="inputs" formControlName="email">
+                </div>
+                <div class="col-25"></div>
+                <div class="col-75">
+                    <button type="submit" class="buttons btn-success" >save</button>
+                    <button type="button" class="buttons btn-clear" (click)="onReset()">clear</button>
+                </div>
+            </div>
+        </form>
+    </article>
+</section>

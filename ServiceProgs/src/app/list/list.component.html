@@ -1,11 +1,14 @@
 <div>
+    <label>Add Course: </label>
+    <input class="inputs" type="text" #courseInput />
+    <button class="buttons btn-success" type="button" (click)="onAddCourse(courseInput.value)">save</button>
+
+</div>
+<div>
     <dl>
         <dd *ngFor="let courses of list_course">{{ courses }}</dd>
     </dl>
 </div>
-<!-- <div>
-    <button class="buttons btn-success">Success</button>
-    <button class="buttons btn-info">Information</button>
-    <button class="buttons btn-warning">Warning</button>
-    <button class="buttons btn-danger">Danger</button>
-</div> -->
+<div>
+    <p>Course Added: {{ createdCourse }}</p>
+</div>
