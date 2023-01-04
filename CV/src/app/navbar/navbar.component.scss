@@ -1,0 +1,40 @@
+@use "sass:map";
+
+$colors-background: (
+    "text": #ecedee,
+    "background-header": rgb(152, 201, 192),
+    "background-footer": #9da0a3,
+    "background-nav": #eff2f5,
+    "background-shadow": #9c9b9b,
+    "background-hover" : #e6e1e1,
+    "background-hover-word" : #a1a0a0
+);
+
+dl {
+    overflow: hidden;
+    background-color: map-get($colors-background , "background-nav");
+    /* text-shadow: 1px 1px 3px #8f8e8e; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a {
+    float: left;
+    display: block;
+    color: map-get($colors-background, "background-hover-word");
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;    
+}
+
+a:hover {
+    background-color: map-get($colors-background, "background-hover");
+    color: map-get($colors-background, "background-header");
+}
+
+.presentation {
+    float: right;
+    padding-right: 5%;
+}
