@@ -1,10 +1,15 @@
 <div>
-    <dl class="menuNav">
-        <dd><a routerLink="experience">Experiences</a></dd>
-        <dd><a routerLink="course">Courses</a></dd>
-        <dd><a class="presentation" routerLink="">Home</a></dd>
-    </dl>
+    <div class="topnav" id="myTopnav">
+        <a routerLink="" class="active">home</a>
+        <a routerLink="experience">experiences</a>
+        <a routerLink="course">course</a>
+        <a routerLink="contact">contact</a>
+        <a routerLink="buttons">buttons</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 </div>
 <div>
-    <router-outlet></router-outlet>
+    <app-contents></app-contents>
 </div>

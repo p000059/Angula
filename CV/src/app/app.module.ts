@@ -12,6 +12,9 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CardComponent } from './card/card.component';
+import { ContentsComponent } from './contents/contents.component';
+import { ButtonsComponent } from './buttons/buttons.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     ContactsComponent,
     HeaderComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    CardComponent,
+    ContentsComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,

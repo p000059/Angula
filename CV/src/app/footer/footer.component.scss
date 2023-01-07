@@ -1,32 +1,36 @@
-footer {
-    text-align: center;
-    border-spacing: 3px;
-    background-color: #9da0a3;
-    vertical-align: middle;
-    font: bold;
-    padding: 1px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
+@use "sass:map";
 
-.ltext {
+$colors-footer: (
+    text-footer: rgb(231, 232, 233),
+    background-footer: rgb(161, 168, 167)
+);
+
+@mixin custom-footer() {
+    vertical-align: middle;
+    padding: 1px;
     font-size: 13px;
     font-style: italic;
     font-weight: 600;
-    color: #ecedee;
-    text-shadow: 1px 1px 3px #000000;
     text-align: center;
-    text-justify: auto;
+    text-shadow: 1px 1px 3px #000000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+footer {
+    @include custom-footer();
+    border-spacing: 3px;
+    background-color: map-get($colors-footer, $key:background-footer);
+}
+
+.ltext {
+    color: map-get($colors-footer, $key:text-footer);
     text-transform: capitalize;
 }
 
-.description-build {
-    text-align: right;
-    font-size: 13px;
-    font-style: italic;
-    color: #ecedee;
-    text-shadow: 1px 1px 3px #000000;
+.preposition {
+    color: map-get($colors-footer, $key:text-footer);
+    text-transform: none;
 }
-

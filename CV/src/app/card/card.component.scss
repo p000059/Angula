@@ -1,0 +1,15 @@
+.container{
+    background-color: rgb(235, 232, 232);
+    padding: 1px;
+    margin: 2px 0;
+    width: 60%;
+    margin: 3px auto 3px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px, 0px, 0px, 1px;
+}
+
+.content {
+    background-color: #f5f7f8;
+    padding: 5px;
+}
