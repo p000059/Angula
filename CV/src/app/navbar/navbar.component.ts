@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
   selector: 'app-navbar',
@@ -7,14 +8,19 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  
-  /* function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-          x.className += " responsive";
-      } else {
-          x.className = "topnav";
-      }
-  } */
+  private x: any
 
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
+
+  myFunction() {
+    this.x = document.getElementById("myTopnav")
+    if (this.x.className === "topnav") {
+      this.x.className += "responsive"
+    } else {
+      this.x.className = "topnav"
+    }
+  }
 }

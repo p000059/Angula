@@ -1,0 +1,51 @@
+@use "sass:map";
+
+$colors-elements: (
+    text-container: rgb(110, 110, 110),
+    background-container: rgb(238, 236, 236),
+    text-button: rgb(255, 255, 255),
+    background-button: rgb(117, 117, 117)
+);
+
+@mixin default-text () {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.title-page {
+    text-transform: capitalize;
+    @include default-text();
+}
+
+.conjunction {
+    text-transform: none;
+    @include default-text();
+}
+
+.div-title {
+    text-align: center;
+}
+
+.containerD {
+    width: auto;
+    height: auto;
+    background: map-get($colors-elements , $key: background-container);
+    color: map-get($colors-elements , $key: text-container);
+    padding: 15px;
+    text-align: left;
+}
+
+.button-d {
+    border-radius: 4px;
+    width: 100%;
+    background-color: map-get($colors-elements , $key: background-button);
+    border: none;
+    color: map-get($colors-elements , $key: text-button);
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    overflow: hidden;
+}

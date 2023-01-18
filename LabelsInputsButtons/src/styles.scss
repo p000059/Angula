@@ -1,0 +1,139 @@
+@use "sass:map";
+@use '@angular/material' as mat;
+
+@include mat.core();
+/*
+@include mat.all-component-themes($LabelsInputsButtons-theme);
+
+$LabelsInputsButtons-primary: mat.define-palette(mat.$indigo-palette);
+$LabelsInputsButtons-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$LabelsInputsButtons-warn: mat.define-palette(mat.$red-palette);
+
+$LabelsInputsButtons-theme: mat.define-light-theme((
+  color: (
+    primary: $LabelsInputsButtons-primary,
+    accent: $LabelsInputsButtons-accent,
+    warn: $LabelsInputsButtons-warn,
+  )
+));
+ */
+
+
+$colors-elements: (
+    clear-text: rgb(228, 226, 226),
+    gray-text: rgb(131, 131, 131),
+    btn-green: rgb(124, 190, 178),
+    btn-danger: rgb(255, 83, 83),
+    btn-success: rgb(122, 189, 144),
+    btn-info: rgb(115, 153, 179),
+    btn-warning: rgb(190, 179, 81),
+    btn-neutral: rgb(182, 182, 182),
+    btn-neutral-clear: rgb(214, 213, 213),
+    background-default:  rgb(238, 236, 236)
+);
+
+* {
+    font-family: system-ui;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding-top: 70.4px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 620px) {
+    .left, .main, .right {
+        width: 100%;
+    }
+}
+
+@mixin struct-fields() {
+    margin: 2px;
+    border-radius: 4px;
+    border-width: 1px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-justify: inherit;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.label {
+    @include struct-fields();
+    background-color: map-get($colors-elements, $key:background-default)
+}
+
+.inputs {
+    @include struct-fields();
+    text-transform: none;
+}
+
+.buttons {
+    @include struct-fields;
+    text-transform: capitalize;
+    margin: 2px;    
+}
+
+.button-hover:hover {
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.30),0 5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.btn-danger {
+    border-color: map-get($colors-elements , $key:btn-danger);
+    background-color: map-get($colors-elements , $key:btn-danger);
+    color: map-get($colors-elements , $key:clear-text);
+}
+
+.btn-info {
+    border-color: map-get($colors-elements , $key:btn-info);
+    background-color: map-get($colors-elements , $key:btn-info);
+    color: map-get($colors-elements , $key:clear-text);
+}
+
+.btn-success {
+    border-color: map-get($colors-elements, $key:btn-success);
+    background-color: map-get($colors-elements, $key:btn-success);
+    color: map-get($colors-elements , $key:clear-text);
+}
+
+.btn-green {
+    border-color: map-get($colors-elements, $key:btn-green);
+    background-color: map-get($colors-elements, $key:btn-green);
+    color: map-get($colors-elements, $key:clear-text);
+}
+
+.btn-warning  {
+    border-color: map-get($colors-elements, $key:btn-warning);
+    background-color: map-get($colors-elements, $key:btn-warning);
+    color: map-get($colors-elements, $key:clear-text);
+}
+
+.btn-neutral {
+    border-color: map-get($colors-elements, $key:btn-neutral);
+    background-color: map-get($colors-elements, $key:btn-neutral);
+    color: map-get($colors-elements , $key:clear-text);
+}
+
+.btn-neutral-clear {
+    border-color: map-get($colors-elements, $key:btn-neutral-clear);
+    background-color: map-get($colors-elements, $key:btn-neutral-clear);
+    color: map-get($colors-elements, $key:gray-text);
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

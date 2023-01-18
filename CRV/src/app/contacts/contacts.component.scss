@@ -1,0 +1,45 @@
+@use "sass:map";
+
+$colors-elements: (
+    text-container: rgb(110, 110, 110),
+    background-container: rgb(238, 236, 236),
+    text-button: rgb(255, 255, 255),
+    background-button: rgb(117, 117, 117)
+);
+
+@mixin default-text () {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.title-page {
+    text-transform: capitalize;
+    @include default-text();
+}
+
+.conjunction {
+    text-transform: none;
+    @include default-text();
+}
+
+.div-title {
+    text-align: center;
+}
+
+.title-text {
+    font-size: 13px;
+    font-style: italic;
+    padding: 3px;
+    text-align: center;
+}
+
+.description-text {
+    font-size: 15px;
+    text-indent: 50px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+ul.b {
+    list-style-position: inside;
+}

@@ -1,0 +1,36 @@
+@mixin default-text () {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.title-page {
+    text-transform: capitalize;
+    @include default-text();
+}
+
+.conjunction {
+    text-transform: none;
+    @include default-text();
+}
+
+.div-title {
+    text-align: center;
+}
+
+.title-text {
+    font-size: 13px;
+    font-style: italic;
+    padding: 3px;
+    text-align: center;
+}
+
+.description-text {
+    font-size: 15px;
+    text-indent: 50px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+ul.b {
+    list-style-position: inside;
+}

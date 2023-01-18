@@ -1,0 +1,31 @@
+@use "sass:map";
+
+$colors-elements: (
+    color-text: rgb(236, 235, 235),
+    color-background: rgb(152, 201, 192)
+);
+
+@mixin custom-header() {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    right: 0;
+}
+
+header {
+    background-color: map-get($colors-elements, $key:color-background);
+    @include custom-header();
+}
+
+.ltext {
+    color: map-get($colors-elements, $key: color-text);
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #000000;
+    text-transform: capitalize;
+    text-align: center;
+    text-justify: inherit;
+}

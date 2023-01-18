@@ -1,0 +1,40 @@
+@use "sass:map";
+
+$colors-background: (
+    "text": #ecedee,
+    "background-header": rgb(91, 206, 187),
+    "background-footer": #9da0a3,
+    "background-nav": #eff2f5,
+    "background-shadow": #9c9b9b,
+    "background-hover" : #e6e1e1,
+    "background-hover-word" : #a1a0a0,
+    "background-border-radius": #000000
+);
+
+img {
+    position: relative;
+    z-index: -1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 245px;
+    height: 250px;
+}
+
+figure {
+    float: left;
+    width: auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.div-figure {
+    box-sizing: border-box;
+}
+
+.div-presentation {
+    text-align: right;
+}

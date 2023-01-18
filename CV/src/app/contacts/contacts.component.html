@@ -1,34 +1,40 @@
-<article>
-    <app-card>
-        <form action="/action_page.php">
-            <div class="row">
-              <div class="col-25">
-                <label for="fname">Name</label>
-              </div>
-              <div class="col-75">
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="country">Email</label>
-              </div>
-              <div class="col-75">
-                <input type="email" id="lemail" name="email" placeholder="Your email..">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="subject">Subject</label>
-              </div>
-              <div class="col-75">
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <input type="submit" value="Send">
-            </div>
-            </form>
-    </app-card>
+<article class="container">
+  <app-card>
+    <form>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Name</label>
+        </div>
+        <div class="col-75">
+          <label type="text" id="lname" name="name">Marcelo Guimarães Barbosa</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Email</label>
+        </div>
+        <div class="col-75">
+          <label type="email" id="lemail" name="email">marcelo.acad@gmail.com</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Linkedin</label>
+        </div>
+        <div class="col-75">
+          <label id="lzap" name="whatsapp"><a href="https://br.linkedin.com/in/marcelo-guimba"
+              target="_blank">Linkedin/Marcelo</a></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Whatsapp</label>
+        </div>
+        <div class="col-75">
+          <label id="lzap" name="whatsapp"><a href="https://api.whatsapp.com/send?phone=61999988533"
+              target="_blank">Whatsapp</a></label>
+        </div>
+      </div>
+    </form>
+  </app-card>
 </article>

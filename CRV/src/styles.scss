@@ -1,0 +1,15 @@
+@use "sass:map";
+@import 'bootstrap/scss/bootstrap';
+
+$colors-elements: (
+    clear-text: rgb(228, 226, 226),
+    gray-text: rgb(131, 131, 131),
+    btn-green: rgb(124, 190, 178),
+    btn-danger: rgb(255, 83, 83),
+    btn-success: rgb(122, 189, 144),
+    btn-info: rgb(115, 153, 179),
+    btn-warning: rgb(190, 179, 81),
+    btn-neutral: rgb(182, 182, 182),
+    btn-neutral-clear: rgb(214, 213, 213),
+    background-default:  rgb(238, 236, 236)
+);

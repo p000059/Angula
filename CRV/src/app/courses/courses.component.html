@@ -1,0 +1,118 @@
+<article>
+    <section>
+        <app-card>
+            <div class="div-title"><span class="title-page">courses</span><span class="conjunction"> and </span><span
+                    class="title-page">qualifications</span></div>
+        </app-card>
+    </section>
+    <section>
+        <app-card>
+            <button class="button-d dropdown-toggle" (click)="showhideOperationalSystems()">Operational Systems</button>
+            <div *ngIf="visibleOperationalSystem" class="containerD">
+                <dd>
+                    <dl>Linux Debian</dl>
+                    <dl>Linux Ubuntu</dl>
+                    <dl>Oracle Linux</dl>
+                    <dl>Microsoft Windows</dl>
+                </dd>
+            </div>
+        </app-card>
+    </section>
+    <section>
+        <app-card>
+            <button class="button-d dropdown-toggle" (click)="showVirtualization()">Virtualization</button>
+            <div *ngIf="visibleVirtualization" class="containerD">
+                <dd>
+                    <dl>VWare Workstation</dl>
+                    <dl>Virtual-Box (Oracle)</dl>
+                </dd>
+            </div>
+        </app-card>
+    </section>
+    <section>
+        <app-card>
+            <button class="button-d dropdown-toggle" (click)="showhideNetworkDevices()">Network Devices</button>
+            <div *ngIf="visibleNetworkDevices" class="containerD">
+                <dd>
+                    <dl>Configuração de Roteadores e Switches Cisco</dl>
+                </dd>
+            </div>
+        </app-card>
+    </section>
+    <section>
+        <app-card>
+            <button class="button-d dropdown-toggle" (click)="showhideDataBase()">Data Base</button>
+            <div *ngIf="visibleDataBase" class="containerD">
+                <dl>
+                    <dl><span>Projects and Scripts: </span><a href="https://github.com/p000059/SQL-Scripts"
+                            target="_blank">GitHub/SQL</a></dl>
+                    <dt>Banco de Dados MySQL</dt>
+                    <dd><a href="https://github.com/p000059/SQL-Scripts/tree/master/MySQL"
+                            target="_blank">GitHub/MySQL</a></dd>
+                    <dt>Banco de Dados PostgreSQL</dt>
+                    <dd><a href="https://github.com/p000059/SQL-Scripts/tree/master/PostgreSQL/PROJECTS"
+                            target="_blank">GitHub/PostgreSQL</a></dd>
+                </dl>
+            </div>
+        </app-card>
+    </section>
+    <section>
+        <app-card>
+            <button class="button-d dropdown-toggle" (click)="showhideProgrammingLanguages()">Programming
+                Languages</button>
+            <div *ngIf="visibleProgrammingLanguages" class="containerD">
+                <dl>
+                    <dt>JavaScript</dt>
+                    <dd><span>Codes: </span><a href="https://github.com/p000059/JavaScript"
+                            target="_blank">GitHub/Javascript</a></dd>
+                    <dt>Biblioteca Angular</dt>
+                    <dd><span>Small Snipers and Systems: </span><a href="https://github.com/p000059/Angular"
+                            target="_blank">GitHub/Angular</a></dd>
+                    <dt>Java</dt>
+                    <dd><span>Small Snipers: <a href="https://github.com/p000059/Java"
+                                target="_blank">Github/Java</a></span></dd>
+                    <dd><span>Systems: </span> <a href="https://github.com/p000059/systems"
+                            target="_blank">GitHub/Systems</a></dd>
+                </dl>
+            </div>
+        </app-card>
+    </section>
+    <section>
+        <app-card>
+            <button class="button-d dropdown-toggle" (click)="showhideSystemsTools()">Systems and Tools</button>
+            <div *ngIf="visibleSystemsTools" class="containerD">
+                <dd>
+                    <dl>Curso em Teste de Software</dl>
+                    <dl>Versionamento de software com ferramenta Git e GitHub.</dl>
+                    <dl>Trello - Ferramenta para Gerência de Tarefas</dl>
+                </dd>
+            </div>
+        </app-card>
+    </section>
+    <section>
+        <app-card>
+            <div>
+                <button class="button-d dropdown-toggle" (click)="showhideHardware()">Hardware</button>
+            </div>
+            <div *ngIf="visibleHardware" class="containerD">
+                <dd>
+                    <dl>Montagem e Configuração de Microcomputadores</dl>
+                    <dl>Curso Técnico de Redes de Computadores</dl>
+                    <dl>Cabeamento Estruturado de Redes de Computadores</dl>
+                </dd>
+            </div>
+        </app-card>
+    </section>
+    <section>
+        <app-card>
+            <button class="button-d dropdown-toggle" (click)="showhideOthers()">Others</button>
+            <div *ngIf="visibleOthers" class="containerD">
+                <dd>
+                    <dl>Empreendedorismo (Escola on-line SEBRAE)</dl>
+                    <dl>Gestão Financeira para Micro-Empreendedor</dl>
+                    <dl>Gestão Administrativa para Micro-Empreendedor</dl>
+                </dd>
+            </div>
+        </app-card>
+    </section>
+</article>
